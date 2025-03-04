@@ -17,8 +17,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>6.1.11</spring.version>
   </properties>
-
+<dependencyManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -26,5 +27,28 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>6.1.11</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
   </dependencies>
+</dependencyManagement>
+<distributionManagement>
+<!--  <snapshotRepository>-->
+<!--    <id>jboss-maven2-release-repository</id>-->
+<!--    <url>xx</url>-->
+<!--  </snapshotRepository>-->
+<!--  <repository>-->
+<!--    <id>jboss-maven2-release-repository</id>-->
+<!--    <url>xx</url>-->
+<!--  </repository>-->
+</distributionManagement>
 </project>
